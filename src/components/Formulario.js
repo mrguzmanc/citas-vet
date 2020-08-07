@@ -22,9 +22,7 @@ const Formulario = ({ crearCita }) => {
 
   const { mascota, propietario, fecha, hora, sintomas } = cita;
 
-  const submitCita = (e) => {
-    e.preventDefault();
-
+  const submitCita = () => {
     if (
       mascota.trim() === "" ||
       propietario.trim() === "" ||
